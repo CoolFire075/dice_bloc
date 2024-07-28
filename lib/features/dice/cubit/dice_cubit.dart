@@ -6,7 +6,12 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'dice_variant.dart';
 
 class DiceCubit extends Cubit<DiceState> {
-  DiceCubit() : super(DiceState(firstNumber: 0, secondNumber: 0, firstDice: DiceVariant.dice_1, secondDice: DiceVariant.dice_1));
+  DiceCubit()
+      : super(DiceState(
+            firstNumber: 0,
+            secondNumber: 0,
+            firstDice: DiceVariant.dice_1,
+            secondDice: DiceVariant.dice_1));
 
   void getRandomDice() {
     emit(
